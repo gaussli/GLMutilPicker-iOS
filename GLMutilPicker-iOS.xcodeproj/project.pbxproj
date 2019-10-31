@@ -14,6 +14,10 @@
 		B44EFF2723695111007BECD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44EFF2623695111007BECD0 /* Assets.xcassets */; };
 		B44EFF2A23695111007BECD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44EFF2823695111007BECD0 /* LaunchScreen.storyboard */; };
 		B44EFF2D23695111007BECD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44EFF2C23695111007BECD0 /* main.m */; };
+		B44EFF47236A7717007BECD0 /* GLPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B44EFF40236A7717007BECD0 /* GLPhotoModel.m */; };
+		B44EFF48236A7717007BECD0 /* GLMultiPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44EFF41236A7717007BECD0 /* GLMultiPickerController.m */; };
+		B44EFF49236A7717007BECD0 /* GLMultiPickerMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44EFF45236A7717007BECD0 /* GLMultiPickerMedia.xcassets */; };
+		B44EFF4A236A7717007BECD0 /* GLMultiPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B44EFF46236A7717007BECD0 /* GLMultiPickerCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		B44EFF2923695111007BECD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B44EFF2B23695111007BECD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B44EFF2C23695111007BECD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B44EFF40236A7717007BECD0 /* GLPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPhotoModel.m; sourceTree = "<group>"; };
+		B44EFF41236A7717007BECD0 /* GLMultiPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMultiPickerController.m; sourceTree = "<group>"; };
+		B44EFF42236A7717007BECD0 /* GLMultiPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMultiPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		B44EFF43236A7717007BECD0 /* GLPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPhotoModel.h; sourceTree = "<group>"; };
+		B44EFF44236A7717007BECD0 /* GLMultiPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMultiPickerController.h; sourceTree = "<group>"; };
+		B44EFF45236A7717007BECD0 /* GLMultiPickerMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GLMultiPickerMedia.xcassets; sourceTree = "<group>"; };
+		B44EFF46236A7717007BECD0 /* GLMultiPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMultiPickerCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 		B44EFF1923695110007BECD0 /* GLMutilPicker-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B44EFF3F236A7717007BECD0 /* GLMultiPicker */,
 				B44EFF1A23695110007BECD0 /* AppDelegate.h */,
 				B44EFF1B23695110007BECD0 /* AppDelegate.m */,
 				B44EFF1D23695110007BECD0 /* SceneDelegate.h */,
@@ -74,6 +86,20 @@
 				B44EFF2C23695111007BECD0 /* main.m */,
 			);
 			path = "GLMutilPicker-iOS";
+			sourceTree = "<group>";
+		};
+		B44EFF3F236A7717007BECD0 /* GLMultiPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B44EFF40236A7717007BECD0 /* GLPhotoModel.m */,
+				B44EFF41236A7717007BECD0 /* GLMultiPickerController.m */,
+				B44EFF42236A7717007BECD0 /* GLMultiPickerCollectionViewCell.h */,
+				B44EFF43236A7717007BECD0 /* GLPhotoModel.h */,
+				B44EFF44236A7717007BECD0 /* GLMultiPickerController.h */,
+				B44EFF45236A7717007BECD0 /* GLMultiPickerMedia.xcassets */,
+				B44EFF46236A7717007BECD0 /* GLMultiPickerCollectionViewCell.m */,
+			);
+			path = GLMultiPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +162,7 @@
 				B44EFF2A23695111007BECD0 /* LaunchScreen.storyboard in Resources */,
 				B44EFF2723695111007BECD0 /* Assets.xcassets in Resources */,
 				B44EFF2523695110007BECD0 /* Main.storyboard in Resources */,
+				B44EFF49236A7717007BECD0 /* GLMultiPickerMedia.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44EFF2223695110007BECD0 /* ViewController.m in Sources */,
+				B44EFF4A236A7717007BECD0 /* GLMultiPickerCollectionViewCell.m in Sources */,
 				B44EFF1C23695110007BECD0 /* AppDelegate.m in Sources */,
 				B44EFF2D23695111007BECD0 /* main.m in Sources */,
 				B44EFF1F23695110007BECD0 /* SceneDelegate.m in Sources */,
+				B44EFF48236A7717007BECD0 /* GLMultiPickerController.m in Sources */,
+				B44EFF47236A7717007BECD0 /* GLPhotoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
